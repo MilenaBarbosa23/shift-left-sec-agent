@@ -16,7 +16,7 @@ class Settings(BaseModel):
 
     GROQ_API_KEY: str = Field(default_factory=lambda: os.getenv("GROQ_API_KEY", ""))
     MODEL_NAME: str = Field(
-        default_factory=lambda: os.getenv("MODEL_NAME", "llama-3.3-70b-versatile")
+        default_factory=lambda: os.getenv("MODEL_NAME", "openai/gpt-oss-120b")
     )
     DEFAULT_TEMPERATURE: float = Field(
         default_factory=lambda: float(os.getenv("DEFAULT_TEMPERATURE", "0.2"))
@@ -26,7 +26,7 @@ class Settings(BaseModel):
         """Recarrega as configurações a partir do arquivo .env ou variáveis de ambiente."""
         load_dotenv(dotenv_path=ENV_PATH, override=True)
         self.GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
-        self.MODEL_NAME = os.getenv("MODEL_NAME", "llama-3.3-70b-versatile")
+        self.MODEL_NAME = os.getenv("MODEL_NAME", "openai/gpt-oss-120b")
         self.DEFAULT_TEMPERATURE = float(os.getenv("DEFAULT_TEMPERATURE", "0.2"))
 
 

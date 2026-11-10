@@ -16,3 +16,4 @@ O usuário pode solicitar redefinição de senha informando seu e-mail. O link c
 
 ### RF-04: Processamento de Pagamento
 O usuário pode pagar faturas informando os dados do cartão de crédito (número, validade e CVV). Os dados são enviados via requisição HTTP POST para o backend e persistidos na base para compras futuras.
+

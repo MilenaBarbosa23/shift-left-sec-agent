@@ -4,3 +4,4 @@ ESPECIFICAÇÃO DE REQUISITOS - SISTEMA DE PEDIDOS
 RF-01: Cadastro de clientes com CPF e dados de contato sem validação prévia.
 RF-02: Consulta de pedidos em aberto através de endpoint REST publico /api/pedidos/{id_cliente}.
 RF-03: Exportação de faturas e comprovantes em formato de texto para auditoria interna.
+
