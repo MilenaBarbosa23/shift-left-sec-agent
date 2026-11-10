@@ -212,3 +212,4 @@ O produtor conta com uma visão contextualizada da vaga anunciada no topo da pá
 | **Botão "Conversar no WhatsApp"** | Telefone formatado: `(34) 99876-5432` | Abre o WhatsApp com mensagem contextualizada da vaga pronta para envio |
 | **Botão "Aceitar"** | Ação positiva (`✓ Aceitar`) | Aprova a candidatura, incrementa a turma e notifica o trabalhador |
 | **Botão "Rejeitar"** | Ação neutra/destrutiva (`✕ Rejeitar`) | Recusa a candidatura mediante confirmação |
+
