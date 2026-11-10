@@ -17,6 +17,7 @@ def get_llm(
     api_key: Optional[str] = None,
     model_name: Optional[str] = None,
     temperature: Optional[float] = None,
+    max_tokens: Optional[int] = 8192,
 ) -> ChatGroq:
     """
     Retorna uma instância configurada do ChatGroq.
@@ -25,6 +26,7 @@ def get_llm(
         api_key: Chave da API do Groq (opcional, utiliza settings.GROQ_API_KEY por padrão).
         model_name: Nome do modelo (opcional, utiliza settings.MODEL_NAME por padrão).
         temperature: Temperatura de amostragem (opcional, utiliza settings.DEFAULT_TEMPERATURE por padrão).
+        max_tokens: Limite máximo de tokens na resposta (padrão: 8192).
 
     Returns:
         ChatGroq: Instância configurada pronta para uso com LangChain.
@@ -43,6 +45,7 @@ def get_llm(
         groq_api_key=groq_key.strip(),
         model_name=model_name or settings.MODEL_NAME,
         temperature=settings.DEFAULT_TEMPERATURE if temperature is None else temperature,
+        max_tokens=max_tokens,
     )
 
 
