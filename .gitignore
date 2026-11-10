@@ -1,0 +1,33 @@
+# Ambiente e Segredos
+.env
+.env.local
+
+# Ambientes Virtuais
+.venv/
+venv/
+env/
+ENV/
+
+# Python Cache e Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Streamlit
+.streamlit/secrets.toml
+
+# IDEs e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testes e Cobertura
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs e arquivos temporários
+*.log
+
